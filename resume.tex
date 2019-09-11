@@ -1,0 +1,173 @@
+% HUGE HUGE SHOUTOUT TO sourabh@sourabhbajaj.com Sourjabh Bajaj for this template on overleaf!
+
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{brandontmitchell.github.io/website/}{\Large Brandon Mitchell}} & Email : \href{mailto:bmitchell21@cmc.edu}{bmitchell21@cmc.edu}\\
+  \href{http://brandontmitchell.github.io/website}{brandontmitchell.github.io/website} & Mobile : (425) 772-8708 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Claremont McKenna College}{Claremont, CA}
+      {Bachelor of Arts in Computer Science and Applied Mathematics}{Sep 2017 -- May 2021}
+      \resumeItemListStart
+         \resumeItem{Relevant Coursework: }
+          {Data Structures and Advanced Programming, OOP, Discrete Mathematics \& Functional Programming,
+          Language Theory \& Finite Automata, Linear Algebra, Probability, Calculus III, Differential Equations}
+       \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+% --------PROGRAMMING SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+    \item{
+     \textbf{Languages}{: Python, Java, HTML, CSS, Javascript, SQL, OCaml, PHP, \LaTeX}
+    }
+    \item{\textbf{Technologies}{: React.js, Flask, PostgreSQL, Sqlite3, Git, Docker, Balsamiq}
+    }
+    \item{\textbf{Awards \& Campus Involvement}{: PennApps XVIII Hackathon (Top 50 placement), 5C Hackathon $1^{st}$ place, NCAA DIII Varsity Baseball Captain,  CMC Devs President, The CMC Forum Web Manager, Resdiential Technology Assistant, Dorm President}
+    }
+ \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Feasible, Inc.}{Emeryville, CA}
+      {Software Engineer Intern}{Jun 2019 - Aug 2019}
+      \resumeItemListStart
+        \resumeItem{}
+          {Designed and implemented a new database schema in PostgreSQL for the entire software system, increasing queries and data pipe-lining speeds by nearly 10\% while preserving usability and clarity}
+        \resumeItem{}
+          {Created a full-stack data pushing tool using React.js, Flask, and SQLite with Object-Relational Mapping (ORM), resulting in a 15\% increase in data entries per push while maintaining scalability and security}
+          \resumeItem{}
+          {Developed a React.js data cleaning application to work in tandem with lab testers and help reduce human error that led to wasted hours spent cleaning and reorganizing data}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Coding With Kids}{Seattle, WA}
+      {Lead Instructor}{May 2018 - Sep 2018}
+      \resumeItemListStart
+        \resumeItem{}
+          {Taught introductory programming concepts such as conditionals, variables, lists, refactoring, and debugging to up to 22 students per class through various projects}
+        \resumeItem{}
+          {Modified the curriculum to handle adversity and adapt to different-leveled students across all classes}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Crypt0-R2}{}
+      {\url{https://github.com/BrandontMitchell/crypto-b0t}}{May 2018 - Sep 2018}
+      \resumeItemListStart
+        \resumeItem{}
+          {Automated cryptocurrency exchange bot, analyzing market trends such as week average, previous executed price, and exchange slope to execute a buy or sell in a specific crypto coin at a specific price}
+        \resumeItem{}
+          {Used PyQT5 for GUI creation, along with the CCXT module and the Binance API for price and trend line analysis with live plotting from Matplotlib}
+      \resumeItemListEnd
+      \resumeSubheading
+      {Poet-Artist Classifier}{}
+      {\url{https://github.com/BrandontMitchell/Bayesian-Classifier}}{May 2018 - Sep 2018}
+      \resumeItemListStart
+        \resumeItem{}
+          {A from-scratch Bayesian Classifier for text provenance, used to classify different text based on probabilities and predictive modeling to determine if the text correlates more toward Robert Frost or Kanye West}
+      \resumeItemListEnd
+      \resumeSubheading
+      {ReCharge}{}
+      {\url{https://github.com/BrandontMitchell/reCharge}}{May 2018 - Sep 2018}
+      \resumeItemListStart
+        \resumeItem{}
+          {Web application built in HTML, CSS, JS, PHP and MySQL, used to help reduce electric vehicle users' range anxiety by creating an accessible, crowd-sourced visualization tool made of charging stations}
+         \resumeItem{}
+            {Utilized the Google Maps and Google Places API to implement a multi-functioning UI that allowed users to search by range and popularity  }
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+
+
+
+%-------------------------------------------
+\end{document}
